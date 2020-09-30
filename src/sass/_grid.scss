@@ -49,3 +49,10 @@ $small-device: 480px;
     margin-left: grid($i, offset);
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap");
+
+p {
+  font-family: "Aref Ruqaa", serif;
+  font-family: "PT Mono", monospace;
+}
