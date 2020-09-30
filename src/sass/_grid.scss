@@ -9,3 +9,43 @@ $small-device: 480px;
 *::before {
   box-sizing: border-box;
 }
+
+.container {
+  @include container;
+}
+
+.row {
+  @include row;
+}
+
+@function grid($col, $offset: false) {
+  $width: $col / $cols * 100 + "%";
+  $result: calc(#{$width} - #{$gutter});
+  @if $offset == offset {
+    $gutter: $gutter / 2;
+    $result: calc(#{$width} + #{$gutter});
+  }
+
+  @return $result;
+}
+
+[class^="grid"] {
+  @include grid-structure;
+}
+
+@for $i from 1 through $cols {
+  .grid-#{$i} {
+    width: grid($i);
+  }
+}
+
+@include device(small) {
+  [class^="offset-"] {
+    margin-left: 0px;
+  }
+}
+@for $i from 1 through $cols {
+  .offset-#{$i} {
+    margin-left: grid($i, offset);
+  }
+}
