@@ -29,30 +29,24 @@ $small-device: 480px;
   @return $result;
 }
 
-[class^="grid"] {
-  @include grid-structure;
-}
-
 @for $i from 1 through $cols {
   .grid-#{$i} {
     width: grid($i);
   }
 }
 
-@include device(small) {
-  [class^="offset-"] {
-    margin-left: 0px;
-  }
+[class^="grid"] {
+  @include grid-structure;
 }
+
 @for $i from 1 through $cols {
-  .offset-#{$i} {
+  .offsett-#{$i} {
     margin-left: grid($i, offset);
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap");
-
-p {
-  font-family: "Aref Ruqaa", serif;
-  font-family: "PT Mono", monospace;
+@include device(small) {
+  .offsett-1 {
+    margin-left: 0px;
+  }
 }

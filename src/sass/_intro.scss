@@ -1,0 +1,56 @@
+.intro {
+  margin-top: 60px;
+  @include device(small) {
+    margin-top: 20px;
+  }
+}
+
+.logo {
+  margin-bottom: 80px;
+}
+
+.intro-info {
+  border-right: 2px solid $black;
+  max-width: 100vw;
+  p:nth-child(2) {
+    &::after {
+      content: "";
+      margin: 20px 0;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $black;
+    }
+  }
+  + p {
+    color: $tertiary-color;
+    @include device(small) {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    &::after {
+      @include type-1;
+      line-height: 0;
+      content: "///";
+      display: block;
+      color: $black;
+      font-size: 13.25em;
+      margin-top: 150px;
+      @include device(medium) {
+        margin-top: 60px;
+        font-size: 7em;
+      }
+      @include device(small) {
+        display: none;
+      }
+    }
+  }
+}
+
+.aberto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #19b912;
+}
