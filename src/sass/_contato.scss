@@ -1,0 +1,77 @@
+.contato form {
+  margin-top: 60px;
+  @include device(small) {
+    margin-top: 30px;
+  }
+   label {
+    display: block;
+  }
+   input[type="text"],
+   input[type="email"],
+   textarea {
+    width: 100%;
+    @include type-1;
+    color: $black;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $secondary-color;
+    background: transparent;
+    margin-bottom: 1em;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $tertiary-color;
+    }
+  }
+   textarea {
+    height: 120px;
+  }
+}
+
+input.button {
+  @include type-1;
+  cursor: pointer;
+  color: $tertiary-color;
+  text-transform: uppercase;
+  border: 2px solid $tertiary-color;
+  display: block;
+  background: transparent;
+  width: 200px;
+  padding-top: 5px;
+  @include box-shadow(
+    5px 5px 0 -2px $secondary-color,
+    5px 5px 0 0 $tertiary-color
+  );
+  transition: 0.3s;
+  &:hover {
+    @include box-shadow(
+      3px 3px 0 -2px $secondary-color,
+      3px 3px 0 0 $tertiary-color
+    );
+  }
+}
+
+.contato-info {
+    display: inline-block;
+    color: $tertiary-color;
+    @include device(large){
+        float: right;
+        text-align: right;
+        margin-top: -3em;
+        margin-bottom: 3em;     
+    }
+    margin-top: 1em;
+    margin-bottom: 1em;
+   
+}
+
+.mapa {
+    float: right;
+    border: 10px solid $secondary-color;
+    margin-bottom: 3em;
+}
+
+.mapa iframe {
+    width: 100%; 
+}
+
