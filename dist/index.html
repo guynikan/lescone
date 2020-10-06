@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Le Scone</title>
+    <meta name="description" content="Le Scone - Restaurante" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/dist/favicon.ico"><link href="/dist/css/main.css" rel="stylesheet"></head>
+  <body>
+    <main class="container intro">
+      <div class="grid-4">
+        <img class="logo" src="/dist/img/lescone.png" alt="Le scone" />
+        <div class="intro-info">
+          <p>De Seg. à Sab. <span class="aberto"></span></p>
+          <p>das 07:00 às 18:00</p>
+          <p>Praia de Botafogo, 300</p>
+          <p>Rio de Janeiro - RJ</p>
+        </div>
+        <p>+55 021 2412-3333</p>
+      </div>
+      <div class="grid-7 offsett-1">
+        <img class="foto-intro" src="/dist/img/foto.png" alt="Foto de Le scone" />
+      </div>
+    </main>
+    <section class="container menu">
+      <h1 class="grid-4 title">Menu</h1>
+      <div class="grid-7 offsett-1">
+        <div class="menu-item">
+          <img src="/dist/img/prato-1.png" alt="foto intro" />
+          <h2>Entradas</h2>
+          <ul>
+            <li><span>R$1,70 </span>Ovos Mexidos</li>
+            <li><span>R$1,50 </span>Scones de Frutas</li>
+            <li><span>R$2,00 </span>Joelho de Queijo</li>
+            <li><span>R$2,50 </span>Coxinha de Frango</li>
+            <li><span>R$1,50 </span>Presunto Cozido</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <img src="/dist/img/prato-2.png" alt="" />
+          <h2>Pratos Principais</h2>
+          <ul>
+            <li><span>R$10,70 </span>Risotto de Camarão</li>
+            <li><span>R$11,50 </span>Penne com Queijo</li>
+            <li><span>R$20,00 </span>Fejoada</li>
+            <li><span>R$25,50 </span>Costela ao Molho</li>
+            <li><span>R$15,50 </span>Medalhão de Frango</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container contato">
+      <h1 class="grid-4 title">Contato</h1>
+      <div class="grid-7 offsett-1">
+        <form action="">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" />
+          <div class="row">
+            <div class="grid-7">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="grid-5">
+              <label for="phone">Telefone</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+          </div>
+          <label for="message">Mensagem</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input class="button" type="submit" value="Enviar" />
+        </form>
+        <div class="contato-info">
+          <p>contato@lescone.com ////</p>
+          <p>+55 021 2412-3333 ////</p>
+        </div>
+      </div>
+      <div class="grid-7 mapa">
+          <iframe
+              frameborder="0"
+              style="border: 0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCTp0MFhIH6zxViuU5e2KoUluuCNIepDS8
+                           &q=Memorial+da+America+Latina,Sao+Paulo+SP"
+          >
+          </iframe>
+          
+      </div>
+    </section>
+
+      <footer>
+      <div class="container">
+        <p>Le Scone © 1989 - 2016. Alguns direitos reservados</p>
+        <img src="/dist/img/lescone-icone.png" alt="Le scone icone" />
+      </div>
+    </footer>
+  <script src="/dist/bundle.js"></script></body>
+</html>
