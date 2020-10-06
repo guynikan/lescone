@@ -4,48 +4,129 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 *,
 *::after,
@@ -63,14 +144,15 @@ table {
     max-width: 760px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .container {
-    max-width: 480px;
+    max-width: 300px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-.container::before, .container::after {
+.container::before,
+.container::after {
   content: "";
   display: table;
   clear: both;
@@ -81,13 +163,14 @@ table {
   margin-left: -10px;
   margin-right: -10px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .row {
     margin-left: 0px;
     margin-right: 0px;
   }
 }
-.row::before, .row::after {
+.row::before,
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -141,14 +224,14 @@ table {
   width: calc(100% - 20px);
 }
 
-[class^=grid] {
+[class^="grid"] {
   float: left;
   min-height: 1;
   margin-left: 10px;
   margin-right: 10px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
-  [class^=grid] {
+@media screen and (min-width: 300px) and (max-width: 759px) {
+  [class^="grid"] {
     width: 100%;
     float: none;
     margin-left: 0px;
@@ -204,7 +287,7 @@ table {
   margin-left: calc(100% + 10px);
 }
 
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .offsett-1 {
     margin-left: 0px;
   }
@@ -217,7 +300,7 @@ body {
   color: #2a2426;
   border: 10px solid #cbc5b9;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   body {
     border: none;
   }
@@ -238,7 +321,7 @@ h2 {
 .title {
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .title {
     margin-bottom: 40px;
   }
@@ -257,16 +340,16 @@ h2 {
     width: 60%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .title::after {
-    width: 80%;
+    width: 60%;
   }
 }
 
 .intro {
   margin-top: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .intro {
     margin-top: 20px;
   }
@@ -290,7 +373,7 @@ h2 {
 .intro-info + p {
   color: #988c77;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .intro-info + p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -315,7 +398,7 @@ h2 {
     letter-spacing: -60px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .intro-info + p::after {
     display: none;
   }
@@ -338,7 +421,7 @@ h2 {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .menu {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -364,7 +447,7 @@ h2 {
   margin-left: -80px;
   color: #988c77;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .menu-item li span {
     margin-left: 0;
     width: auto;
@@ -382,17 +465,16 @@ h2 {
     right: 120px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .menu-item img {
-    margin-top: 80px;
-    width: 150px;
+    display: none;
   }
 }
 
 .contato form {
   margin-top: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .contato form {
     margin-top: 30px;
   }
@@ -400,8 +482,8 @@ h2 {
 .contato form label {
   display: block;
 }
-.contato form input[type=text],
-.contato form input[type=email],
+.contato form input[type="text"],
+.contato form input[type="email"],
 .contato form textarea {
   width: 100%;
   font-family: "PT Mono", monospace;
@@ -414,9 +496,10 @@ h2 {
   background: transparent;
   margin-bottom: 1em;
 }
-.contato form input[type=text]:hover, .contato form input[type=text]:focus,
-.contato form input[type=email]:hover,
-.contato form input[type=email]:focus,
+.contato form input[type="text"]:hover,
+.contato form input[type="text"]:focus,
+.contato form input[type="email"]:hover,
+.contato form input[type="email"]:focus,
 .contato form textarea:hover,
 .contato form textarea:focus {
   outline: none;
@@ -482,7 +565,7 @@ footer {
   -moz-box-shadow: 0 0 0 10px #2a2426;
   box-shadow: 0 0 0 10px #2a2426;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   footer {
     text-align: center;
   }
