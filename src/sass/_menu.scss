@@ -39,8 +39,7 @@
       right: 120px;
     }
     @include device(small) {
-      margin-top: 80px;
-      width: 150px;
+      display: none;
     }
   }
 }

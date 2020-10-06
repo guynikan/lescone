@@ -63,9 +63,9 @@ table {
     max-width: 760px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .container {
-    max-width: 480px;
+    max-width: 300px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -81,7 +81,7 @@ table {
   margin-left: -10px;
   margin-right: -10px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -147,7 +147,7 @@ table {
   margin-left: 10px;
   margin-right: 10px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   [class^=grid] {
     width: 100%;
     float: none;
@@ -204,7 +204,7 @@ table {
   margin-left: calc(100% + 10px);
 }
 
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .offsett-1 {
     margin-left: 0px;
   }
@@ -217,7 +217,7 @@ body {
   color: #2a2426;
   border: 10px solid #cbc5b9;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   body {
     border: none;
   }
@@ -238,7 +238,7 @@ h2 {
 .title {
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .title {
     margin-bottom: 40px;
   }
@@ -257,16 +257,16 @@ h2 {
     width: 60%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .title::after {
-    width: 80%;
+    width: 60%;
   }
 }
 
 .intro {
   margin-top: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .intro {
     margin-top: 20px;
   }
@@ -290,7 +290,7 @@ h2 {
 .intro-info + p {
   color: #988c77;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .intro-info + p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -315,7 +315,7 @@ h2 {
     letter-spacing: -60px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .intro-info + p::after {
     display: none;
   }
@@ -338,7 +338,7 @@ h2 {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .menu {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -364,7 +364,7 @@ h2 {
   margin-left: -80px;
   color: #988c77;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .menu-item li span {
     margin-left: 0;
     width: auto;
@@ -382,17 +382,16 @@ h2 {
     right: 120px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .menu-item img {
-    margin-top: 80px;
-    width: 150px;
+    display: none;
   }
 }
 
 .contato form {
   margin-top: 60px;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   .contato form {
     margin-top: 30px;
   }
@@ -482,7 +481,7 @@ footer {
   -moz-box-shadow: 0 0 0 10px #2a2426;
   box-shadow: 0 0 0 10px #2a2426;
 }
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (min-width: 300px) and (max-width: 759px) {
   footer {
     text-align: center;
   }
