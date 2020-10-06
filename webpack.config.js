@@ -12,11 +12,15 @@ module.exports = {
     filename: "bundle.js",
     chunkFilename: "[name].js",
   },
+    devServer: {
+        contentBase: './dist'
+    },
   plugins: [
     new MiniCssExtractPlugin({ filename: "css/[name].css" }),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "src/index.html",
+        template: "src/index.html",
+        favicon: "src/favicon.ico"
     }),
   ],
   module: {

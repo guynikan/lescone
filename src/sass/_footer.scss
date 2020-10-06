@@ -1,0 +1,15 @@
+footer {
+    background: $black;
+    color: $primary-color;
+    padding: 20px 0;
+    @include box-shadow(0 0 0 10px $black);
+    @include device(small){
+        text-align: center;
+    }
+     img {
+        float: right;
+    }
+     p {
+         display: inline;
+     }
+}
